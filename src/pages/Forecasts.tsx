@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { useAuth } from '@/contexts/AuthContext';
 import { 
-  TrendingUp, TrendingDown, Minus, Clock, Calendar,
+  TrendingUp,TrendingDown, Minus, Clock, Calendar,
   AlertTriangle, Download, RefreshCw, ChevronRight
 } from 'lucide-react';
 import {
