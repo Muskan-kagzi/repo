@@ -133,3 +133,76 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+
+/*---- map css---- */
+
+body, html {
+  margin: 0; padding: 0;
+  height: 100%; width: 100%;
+  background: #0a0a0a;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  color: #f1f1f1;
+  overflow: hidden;
+}
+
+#map { height: 100%; width: 100%; }
+
+/* Side Info Panel */
+#sidebar {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 280px;
+  background: rgba(20,20,20,0.95);
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255,0,0,0.3);
+  z-index: 1000;
+}
+#sidebar h2 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  color: #ff4444;
+  text-align: center;
+}
+#sidebar p { font-size: 14px; color: #ccc; }
+
+/* Legend */
+.legend {
+  background: rgba(20,20,20,0.9);
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 13px;
+  color: white;
+  line-height: 18px;
+}
+.legend span {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+
+/* Pulsing User Location */
+.pulse {
+  background: #00e6e6;
+  border-radius: 50%;
+  height: 20px; width: 20px;
+  position: relative;
+}
+.pulse::after {
+  content: "";
+  position: absolute;
+  border: 2px solid #00e6e6;
+  border-radius: 50%;
+  height: 20px; width: 20px;
+  top: -2px; left: -2px;
+  animation: pulse 1.5s infinite;
+}
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(2); opacity: 0; }
+}
