@@ -299,9 +299,16 @@ export default function RiskMap() {
       {/* Map + Details */}
       <div className="grid lg:grid-cols-3 gap-6">
         {/* Interactive Map */}
+        {/* <Card className="lg:col-span-2 h-[600px]"> */}
+          {/* <Map />   🔥 Map component embedded here */}
+        {/* </Card> */}
         <Card className="lg:col-span-2 h-[600px]">
-          <Map />   {/* 🔥 Map component embedded here */}
-        </Card>
+  <iframe
+    src="http://localhost:3000/map/run-pipeline"
+    className="w-full h-full border-0 rounded-lg"
+  />
+</Card>
+
 
         {/* Zone Details */}
         <div className="space-y-4">
