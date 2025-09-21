@@ -44,3 +44,5 @@ app.use("/api/incidents", require("./routes/Incident")); // Incident routes
 app.listen(PORT, () => {
   console.log(`✅ Backend running on http://localhost:${PORT}`);
 });
+
+

@@ -438,7 +438,7 @@ import pandas as pd
 import numpy as np
 import joblib
 from data_creation_refactored import create_topo_features
-import folium
+import folium 
 import matplotlib.colors as colors
 import matplotlib
 from scipy.interpolate import griddata
@@ -470,7 +470,7 @@ def get_dem(bbox, demtype="SRTMGL1"):
     try:
         url = (
             f"https://portal.opentopography.org/API/globaldem?"
-            f"demtype={demtype}&south={bbox[1]}&north={bbox[3]}"
+            f"demtype={demtype}&south={bbox[1]}&north={bbox[3]}" 
             f"&west={bbox[0]}&east={bbox[2]}"
             f"&outputFormat=GTiff&API_Key={OT_API_KEY}"
         )
