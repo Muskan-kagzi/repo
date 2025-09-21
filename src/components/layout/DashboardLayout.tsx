@@ -27,8 +27,8 @@ export default function DashboardLayout() {
     { name: 'Sensors', href: '/dashboard/sensors', icon: Activity, roles: ['operator', 'inspector', 'main_admin'] as UserRole[] },
     { name: 'Alerts', href: '/dashboard/alerts', icon: AlertTriangle, roles: ['operator', 'inspector', 'main_admin'] as UserRole[] },
     { name: 'Incidents', href: '/dashboard/incidents', icon: FileText, roles: ['operator', 'inspector', 'main_admin'] as UserRole[] },
-    { name: 'Drone Imagery', href: '/dashboard/drone', icon: Upload, roles: ['operator', 'inspector'] as UserRole[] },
-    { name: 'Inspections', href: '/dashboard/inspections', icon: Shield, roles: ['inspector'] as UserRole[] },
+    // { name: 'Drone Imagery', href: '/dashboard/drone', icon: Upload, roles: ['operator', 'inspector'] as UserRole[] },
+    // { name: 'Inspections', href: '/dashboard/inspections', icon: Shield, roles: ['inspector'] as UserRole[] },
     { name: 'Users', href: '/dashboard/users', icon: Users, roles: ['main_admin', 'site_admin'] as UserRole[] },
     { name: 'Settings', href: '/dashboard/settings', icon: Settings, roles: ['main_admin', 'site_admin'] as UserRole[] },
   ];
@@ -138,7 +138,7 @@ export default function DashboardLayout() {
               {/* Chat button */}
               <button className="p-2 text-muted-foreground hover:text-foreground transition-colors">
                 <MessageSquare className="w-5 h-5" />
-              </button>
+              </button> 
 
               {/* Status indicator */}
               <div className="flex items-center space-x-2 px-3 py-1 rounded-full bg-card border border-border">

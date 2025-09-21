@@ -6,7 +6,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { ChevronRight, Shield, Activity, AlertTriangle, Zap, BarChart3, Users, CheckCircle, ArrowRight } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { toast } from '@/components/ui/use-toast';
-import heroImage from '@/assets/hero-mine.jpg';
+import heroImage from '@/assets/iage2.png';
 
 export default function Landing() {
   const navigate = useNavigate();

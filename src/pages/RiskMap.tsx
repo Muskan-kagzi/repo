@@ -197,6 +197,9 @@
 
 
 import React, { useState } from 'react';
+// Add this line at the top of the file, with your other imports
+
+import heroImage from '../assets/iage2.png';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -302,12 +305,49 @@ export default function RiskMap() {
         {/* <Card className="lg:col-span-2 h-[600px]"> */}
           {/* <Map />   🔥 Map component embedded here */}
         {/* </Card> */}
-        <Card className="lg:col-span-2 h-[600px]">
+{/* <Card className="lg:col-span-2 h-[600px]">
   <iframe
     src="http://localhost:3000/map/run-pipeline"
     className="w-full h-full border-0 rounded-lg"
   />
+</Card> */}
+
+{/* React/TSX */}
+
+
+
+
+{/* <Card className="lg:col-span-2 h-[600px]">
+  <a
+    href="/image.png"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="block w-full h-full border rounded-lg overflow-hidden"
+  >
+    <img
+      src="../../iage2.png" 
+      alt="Rockfall"
+      className="w-full h-full object-contain"
+    />
+  </a>
+</Card> */}
+
+<Card className="lg:col-span-2 h-[399px] w-[885px]">
+  <a
+    href={heroImage}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="block w-full h-full border rounded-lg overflow-hidden"
+  >
+    <img
+      src={heroImage}
+      alt="Rockfall"
+      className="w-885 h-390 object-contain"
+    />
+  </a>
 </Card>
+
+
 
 
         {/* Zone Details */}
