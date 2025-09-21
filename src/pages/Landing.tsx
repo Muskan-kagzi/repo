@@ -92,8 +92,17 @@ export default function Landing() {
               <span className="text-xl font-bold text-foreground">RockfallAI</span>
             </div>
             <div className="hidden md:flex items-center space-x-8">
-              <a href="#features" className="text-muted-foreground hover:text-foreground transition-colors">Features</a>
-              <a href="#technology" className="text-muted-foreground hover:text-foreground transition-colors">Technology</a>
+              {/* <a href="#features" className="text-muted-foreground hover:text-foreground transition-colors">Features</a> */}
+              {/* <a href="#technology" className="text-muted-foreground hover:text-foreground transition-colors">Technology</a> */}
+              <a 
+  href="#features" 
+  onClick={(e) => {
+    e.preventDefault(); 
+    document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' })
+  }}
+  className="text-muted-foreground hover:text-foreground transition-colors"
+> Features
+</a>
               <a href="#demo" className="text-muted-foreground hover:text-foreground transition-colors">Request Demo</a>
               <Button 
                 onClick={() => navigate('/login')}
@@ -150,7 +159,7 @@ export default function Landing() {
       </section>
 
       {/* Advanced Safety Technology Section */}
-      <section className="py-20 bg-gradient-dark">
+      <section id="features" className="py-20 bg-gradient-dark">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-foreground mb-4">Advanced Safety Technology</h2>

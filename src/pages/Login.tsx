@@ -481,7 +481,7 @@ export default function Login() {
               </Button>
             </div>
 
-            <div className="mt-8 pt-8 border-t border-border">
+            {/* <div className="mt-8 pt-8 border-t border-border">
               <p className="text-sm text-muted-foreground text-center mb-4">
                 Demo Credentials (click to use)
               </p>
@@ -506,7 +506,7 @@ export default function Login() {
               <p className="text-xs text-muted-foreground text-center mt-4">
                 Password: demo123
               </p>
-            </div>
+            </div> */}
           </div>
         </Card>
       </div>
