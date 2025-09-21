@@ -29,12 +29,13 @@ app.use(cors());
 app.use(express.json()); // parse JSON body
 console.log("✅ MongoDB Connected2");
 // ✅ MongoDB connection
-mongoose.connect("mongodb://localhost:27017/rockfallai", {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-})
-.then(() => console.log("✅ MongoDB Connected3"))
-.catch(err => console.error("❌ MongoDB Connection Error:", err));
+mongoose
+  .connect("mongodb+srv://root:rootuser@cluster0.iue26ut.mongodb.net/rockfall", {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then(() => console.log("✅ MongoDB Connected3"))
+  .catch((err) => console.error("❌ MongoDB Connection Error:", err));
 
 // Routes
 app.use("/api/auth", require("./routes/auth"));       // Auth routes
